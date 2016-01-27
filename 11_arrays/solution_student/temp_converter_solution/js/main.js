@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // when a user clicks the "F to C" button, the following function happens: 
 
 $('#fahrenheit_to_celsius').on('click', function() {
@@ -20,20 +21,27 @@ $('#fahrenheit_to_celsius').on('click', function() {
   // if var temp is "not a number", run the error function 
 =======
 // function when click f to c button
+=======
+
+>>>>>>> GA-Chicago-FEWD6/master
 $('#fahrenheit_to_celsius').on('click', function() {
-  // define temp variable as input value converted from string to float
+
   var temp = parseFloat($('#temperature').val());
-  // define converted temperature as the formula for the conversion
+
   var convertedTemp = (temp - 32) * 5/9;
-  // call backgroundChange function and pass var temp as arg
+
   backgroundChange(temp);
 
   // hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+<<<<<<< HEAD
   // if statement — if the value of var temp is not a number
 >>>>>>> GA-Chicago-FEWD6/master
+=======
+>>>>>>> GA-Chicago-FEWD6/master
   if (isNaN(temp)) {
-    // run add error function
+
     addError();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
  // otherwise if a valid number is inputted, the #result (i.d.) will read "tempF = tempC"
@@ -41,8 +49,11 @@ $('#fahrenheit_to_celsius').on('click', function() {
 =======
     // otherwise (if it is a number)
 >>>>>>> GA-Chicago-FEWD6/master
+=======
+
+>>>>>>> GA-Chicago-FEWD6/master
   } else {
-    // select the element with an id of result and print the original and converted temp
+
     $('#result').html(temp + "&deg;F = " + convertedTemp + "&deg;C");
 
   }
@@ -60,11 +71,15 @@ $('#celsius_to_fahrenheit').on('click', function() {
 
   var convertedTemp = temp * 9 / 5 + 32;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   // call backgroundChange function and passing the convertedTemp as an argument 
 
 =======
   // calling the backgroundChange function and passing the convertedTemp as an arg
+>>>>>>> GA-Chicago-FEWD6/master
+=======
+
 >>>>>>> GA-Chicago-FEWD6/master
   backgroundChange(convertedTemp);
 
@@ -94,6 +109,7 @@ function backgroundChange(temp) {
 
   $('body').attr('class', '');
 
+<<<<<<< HEAD
 // if temp is less than 50, add 'cold' class
 
   if (temp < 50) {
@@ -115,14 +131,26 @@ function backgroundChange(poop) {
   $('body').removeClass();
   // if temp is less than 50 add class cold
   if (poop < 50) {
+=======
+function backgroundChange(temp) {
+
+  $('body').attr('class', '');
+
+  if (temp < 50) {
+>>>>>>> GA-Chicago-FEWD6/master
 
     $('body').addClass('cold');
-    // else if the temp is greater than or eqal to 50, AND less than 70 add class mild to body
-  } else if (poop >= 50 && poop <= 70) {
+
+  } else if (temp >= 50 && temp <= 70) {
 
     $('body').addClass('mild');
+<<<<<<< HEAD
     // otherwise if temp is greater than 70 add class of hot to body
   } else if (poop > 70) {
+>>>>>>> GA-Chicago-FEWD6/master
+=======
+
+  } else if (temp > 70) {
 >>>>>>> GA-Chicago-FEWD6/master
 
     $('body').addClass('hot');
@@ -130,6 +158,7 @@ function backgroundChange(poop) {
   }
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // defining an addError funtion; no parameters.  
 
@@ -143,15 +172,23 @@ function addError() {
 
 =======
 // defining an add error function
+=======
+
+>>>>>>> GA-Chicago-FEWD6/master
 function addError() {
-  // adding the error class to the element with id temperature
+
   $('#temperature').addClass('error');
+<<<<<<< HEAD
   // select .error-message and fadding it in, and changing the html to an error message
+>>>>>>> GA-Chicago-FEWD6/master
+=======
+
 >>>>>>> GA-Chicago-FEWD6/master
   $('.error-message').fadeIn(500).html('Please enter a value.');
 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // clear out error styles
 
@@ -165,15 +202,23 @@ function clearError() {
 
 =======
 // clear out the error styles
+=======
+
+>>>>>>> GA-Chicago-FEWD6/master
 function clearError() {
-  // hiding the error message
+
   $('.error-message').fadeOut(500);
+<<<<<<< HEAD
   // removing the error class
+>>>>>>> GA-Chicago-FEWD6/master
+=======
+
 >>>>>>> GA-Chicago-FEWD6/master
   $('#temperature.error').removeClass('error');
 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  // once you start typing, run the following code: 
 
@@ -187,10 +232,17 @@ $('#temperature').on('keyup', function() {
 
 =======
 // once they start typing run the following code
+=======
+
+>>>>>>> GA-Chicago-FEWD6/master
 $('#temperature').on('keyup', function() {
-  // change result to display nothing
+
   $('#result').html('');
+<<<<<<< HEAD
   // run the clear error function
+>>>>>>> GA-Chicago-FEWD6/master
+=======
+
 >>>>>>> GA-Chicago-FEWD6/master
   clearError();
 
